@@ -1,10 +1,21 @@
-import logo from './logo.svg';
+import './App.css';
+import Home from './Components/Home';
+import Cards from '../src/Components/Cards/index'
 import './App.css';
 
-function App() {
+import React from 'react'
+
+
+const App = (props) => {
+
+ 
+ // componentDidMount (
+  //  newRequest()
+  //)
+  
   return (
-    <div className="App">
-      
+    <div>
+      <Home/>
     </div>
   );
 }
