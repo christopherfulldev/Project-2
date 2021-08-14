@@ -1,6 +1,6 @@
 import "./index.css"
 import Links from '../Links/index'
-
+import Footer from '../Footer/index'
 import React from "react"
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -16,6 +16,7 @@ const Home = () => {
             <h1>Welcome To GameHub</h1>
             <h2>The greatest page from search your favorites game info!!!</h2>
             <Links/>
+            <Footer/>
          </div>
     )
 }
