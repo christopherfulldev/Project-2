@@ -1,5 +1,7 @@
 import React from 'react'
 import '../NavBar/index.css'
+import {Link} from 'react-router-dom'
+
 
 const NavBar = () => {
     return(
@@ -7,7 +9,7 @@ const NavBar = () => {
        <h1>
        GAMEHUB
        </h1>
-       <h5>Card Games</h5>
+       <Link to ='/cardgames'>Card Games</Link>
     </nav>
     )
 
