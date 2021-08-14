@@ -8,11 +8,6 @@ import React from 'react'
 
 const App = (props) => {
 
- 
- // componentDidMount (
-  //  newRequest()
-  //)
-  
   return (
     <div>
       <Home/>
