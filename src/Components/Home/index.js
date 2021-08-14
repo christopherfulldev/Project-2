@@ -1,6 +1,5 @@
 import "./index.css"
-import Cards from "../Cards/index"
-
+import Links from '../Links/index'
 
 import React from "react"
 import axios from 'axios';
@@ -16,8 +15,8 @@ const Home = () => {
         <div className = "home">
             <h1>Welcome To GameHub</h1>
             <h2>The greatest page from search your favorites game info!!!</h2>
-            <Cards/>
-      </div>
+            <Links/>
+         </div>
     )
 }
 
