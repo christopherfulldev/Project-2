@@ -9,7 +9,7 @@ const NavBar = () => {
        <h1>
        GAMEHUB
        </h1>
-       <Link to ='/cardgames'>Card Games</Link>
+       <Link to ='/'>Card Games</Link>
     </nav>
     )
 
