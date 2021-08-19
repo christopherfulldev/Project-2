@@ -28,12 +28,12 @@ const Cards = () => {
                 <ListGroup>Vestibulum at eros</ListGroup>
             </ListGroup>
             <Card.Body>
-                <Card.Link href="#">
+                <Card.Link href="/">
                 <ButtonGroup>
                 <Button>Olá</Button>
                 </ButtonGroup>
                 </Card.Link>
-                <Card.Link href="#"></Card.Link>
+                <Card.Link href="/"></Card.Link>
             </Card.Body>
             </Card> 
       </div>

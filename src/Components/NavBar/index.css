@@ -1,0 +1,7 @@
+nav {
+    background-color: black;
+    justify-content: space-around;
+    display: flex;
+    padding: 1%;
+    color: white;
+}

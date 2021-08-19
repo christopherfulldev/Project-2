@@ -1,4 +1,6 @@
 import "./index.css"
+import Links from '../Links/index'
+import Footer from '../Footer/index'
 import Cards from "../Cards/index"
 import FirstCarousel from "../Carousel/index"
 
@@ -15,7 +17,9 @@ const Home = () => {
         <div className = "home">
             <h1>Welcome To GameHub</h1>
             <h2>The greatest page from search your favorites game info!!!</h2>
-      </div>
+            <Links/>
+            <Footer/>
+         </div>
     )
 }
 
