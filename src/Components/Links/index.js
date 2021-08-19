@@ -5,7 +5,7 @@ const Links = () => {
   return (
    <div className="info-section">
    <div className="gamehub-creators">
-      <h2>Gamehub Creators</h2>
+      <h2>GAMEHUB CREATORS</h2>
       <div className="info-creator">
         <img></img>
         <h3>Christopher</h3>
@@ -25,10 +25,10 @@ const Links = () => {
     <div className="backlink">
     <h2>Backlinks</h2>
     <h3>Links/Sites utilizados</h3>
-    <p>some text about the backlinks</p>
-    </div>
+    <a target="_blank" href="https://rawg.io/">API</a>    </div>
     </div>
   );
 };
+
 
 export default Links;

@@ -1,9 +1,11 @@
 import React from 'react'
-
+import "../Footer/index.css"
 const Footer = () => {
     return (
     <footer>
-    <h1> Put here the information at the footer </h1>
+    <img></img>
+    <h4>Created as a FrontEnd project at Ironhack's Bootcamp campus São Paulo in August/2021.
+Using APIs integrations, React JavaScript, and other libraries.</h4>
     </footer>       
     )
 }
