@@ -7,25 +7,25 @@ const Links = () => {
    <div className="gamehub-creators">
       <h2>GAMEHUB CREATORS</h2>
       <div className="info-creator">
-        <img></img>
-        <h3>Christopher</h3>
-        <h5>About us</h5>
+        <h3>• Christopher Pinto</h3>
+        <h5>ABOUT ME</h5>
         <p>Text about us</p>
-        <a target="_blank" href="https://github.com/christopherfulldev">My GitHub</a>
+        <a className ="link-style" target="_blank" href="https://github.com/christopherfulldev"><img className="img-logo"src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="logo-github"></img></a>
+        
 
       </div>
       <div className="info-creator">
         <img></img>
-        <h3>Debora</h3>
-        <h5>About us</h5>
-        <p>Text about us</p>
-        <a target="_blank" href="https://github.com/DeAT1995">My GitHub</a>
+        <h3>• Debora Tavares</h3>
+        <h5>ABOUT ME</h5>
+        <p>26 years old, graduated from law school, technology enthusiast.</p>
+        <a className ="link-style" target="_blank" href="https://github.com/DeAT1995"><img className="img-logo"src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="logo-github"></img></a>
       </div>
     </div>
     <div className="backlink">
     <h2>Backlinks</h2>
     <h3>Links/Sites utilizados</h3>
-    <a target="_blank" href="https://rawg.io/">API</a>    </div>
+    <a className ="link-style" target="_blank" href="https://rawg.io/">API</a>    </div>
     </div>
   );
 };
