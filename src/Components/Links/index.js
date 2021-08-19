@@ -5,7 +5,7 @@ const Links = () => {
   return (
    <div className="info-section">
    <div className="gamehub-creators">
-      <h2>Gamehub Creators</h2>
+      <h2>GAMEHUB CREATORS</h2>
       <div className="info-creator">
         <img></img>
         <h3>Christopher</h3>
