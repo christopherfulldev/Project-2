@@ -25,10 +25,10 @@ const Links = () => {
     <div className="backlink">
     <h2>Backlinks</h2>
     <h3>Links/Sites utilizados</h3>
-    <p>some text about the backlinks</p>
-    </div>
+    <a target="_blank" href="https://rawg.io/">API</a>    </div>
     </div>
   );
 };
+
 
 export default Links;
