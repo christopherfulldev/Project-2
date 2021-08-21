@@ -24,8 +24,7 @@ const Links = () => {
     </div>
     <div className="backlink">
     <h2>Backlinks</h2>
-    <h3>Links/Sites utilizados</h3>
-    <a className ="link-style" target="_blank" href="https://rawg.io/">API</a>    </div>
+    <a className ="link-style" target="_blank" href="https://rawg.io/">API RAWG</a>    </div>
     </div>
   );
 };
