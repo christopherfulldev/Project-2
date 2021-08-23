@@ -1,20 +1,16 @@
-import "./index.css"
-import Cards from "../Cards/index"
-import FirstCarousel from "../Carousel/index"
+import "./index.css";
 
-
-import React from "react"
-import axios from 'axios';
-import { Link } from 'react-router-dom';
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import FirstCarousel from "../Carousel/index";
 
 
-const Home = () => {
-   
+const Home = (props) => {
     return(
         <div className = "home">
-            <h1>Welcome To GameHub</h1>
-            <h2>The greatest page from search your favorites game info!!!</h2>
+            <h1 className="elegantext">Welcome To GameHub!</h1>
+            <h2 className="elegantext2">The greatest page for search your favorites game info!!!</h2>
+            <FirstCarousel gameList={props} className="carouselcontainer"/>
       </div>
     )
 }
