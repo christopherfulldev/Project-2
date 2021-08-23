@@ -1,0 +1,19 @@
+*{
+    font-size: 14px;
+}
+.info-section {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 250px 20px 150px;
+    line-height: 10px;
+}
+
+.info-section h2 {
+    font-weight: bolder;
+}
+
+.info-section h3 {
+    line-height: 22px;
+}

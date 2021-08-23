@@ -1,11 +1,10 @@
 import './App.css';
 import Home from './Components/Home';
-import './App.css';
 import GetOnApi from './Services/Getonapi'
 import NavBar1 from './Components/NavBar';
 import PageTwo from './Components/Pagetwo/index'
 import React from 'react'
-
+import { Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
   constructor (props) {
@@ -30,7 +29,9 @@ class App extends React.Component {
       return (
       <div className="appstyles">
       <NavBar1/>
-      <Home gameList={this.state.gameList}/>
+      <Switch>
+        <Route exact path="/" render={(routeProps)=>  <Home {... routeProps} gameList= {this.state.gameList}/> } />
+      </Switch>
       {/* <PageTwo gameList={this.state.gameList}/> */}
       </div>
       )
