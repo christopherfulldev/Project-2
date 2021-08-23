@@ -1,26 +1,10 @@
-nav {
-    background-color: black;
-    justify-content: space-around;
-    display: flex;
-    padding: 10px 10px 10px 1px;
-    color: white;
+.navdirection{
+    margin-left: 35vw;
+    justify-content: space-between;
+    font-size: 2vw;
 }
 
-nav h1{
-    font-weight: bolder;
-    font-size: 35px;
-    text-decoration: underline;
-}
-
-nav h4 {
-    padding: 8px;
-    border: 2px solid white;
-    border-radius: 5px;
-    font-weight: bolder;
-    background-color: rgb(44, 40, 40);
-}
-
-.link-style {
-    text-decoration: none;
-    color: white;
+.gamehubspace{
+    margin: 2vw 2vw;
+    padding: 1vw 0vw 0vw 0vw;
 }

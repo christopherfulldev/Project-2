@@ -1,4 +1,37 @@
-.d-block w-100 {
-    width: 30vw;
+.carouselcontainer{
+    width: 75vw;
 }
+
+.carouselcontainer img{
+    min-width: 75vw;
+    min-height: 30vw;
+    max-width: 75vw;
+    max-height: 30vw;
+    padding: 0vw 10vw;
+}
+
+.titleclass{
+  text-align:center;
+  margin: -3vw 5vw;
+  padding: 1vw 0vw 2vw 0vw;
+  font-size: 3vw;
+  color: black;
+  letter-spacing: 0.5vw;
+  font-weight: 700;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0vw 0vw 0.5vw #fff, 0vw 0vw 0.5vw #fff;
+  text-transform: uppercase;
+}
+
+.descriptionclass {
+  text-align: center;
+  padding-bottom: 5vw 0vw 5vw 10vw;
+  font-size: 2.5vw;
+  color: rgb(8, 201, 8);
+  letter-spacing: 1vw;
+  font-weight: 700;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0vw 0vw 0.5vw black, 0vw 0vw 0.5vw black;
+}
+
 
