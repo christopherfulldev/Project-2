@@ -1,25 +1,31 @@
-import React from "react";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup'
+import ListGroup from 'react-bootstrap/ListGroup';
+import "./index.css";
 
 const Cards = (props) => {
 
 const {name, released, rating, platforms, genres, background_image: image } = props;
 
     return (
-      <div>
-            <Card style={{ width: '55vw', height:'20vw' }}>
-            <Card.Img variant="top" src={image}/>
+      <div className="card-config elegantext container-fluid">
+        <Container>
+          <Row>
+            <Card>
+            <Card.Img variant="top" src= {image} className="img-config"/>
             <Card.Body>
-                <Card.Title>{name}</Card.Title>
+                <Card.Title> <div className="card-titles"> Name: </div> {name} </Card.Title>
             </Card.Body>
             <ListGroup className="list-group-flush">
-                 <ListGroup>{platforms.map((el)=>{return el.platforms.name})}</ListGroup>
-                <ListGroup>{genres.map((el)=>{return el.name})}</ListGroup> 
-                <ListGroup>{released}</ListGroup>
-                <ListGroup>{rating}</ListGroup>
+                <ListGroup> <div className="card-titles"> Platforms: </div> {platforms.map((el)=> el.platform.name)} </ListGroup>
+                <ListGroup> <div className="card-titles"> Genres: </div> {genres.map((el)=> el.name)} </ListGroup>
+                <ListGroup> <div className="card-titles"> Released: </div> {released} </ListGroup>
+                <ListGroup> <div className="card-titles"> Rating: </div> {rating} </ListGroup>
             </ListGroup>
-            </Card> 
+            </Card>
+            </Row> 
+        </Container>
       </div>
     );
   }

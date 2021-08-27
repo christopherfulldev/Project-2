@@ -1,19 +1,28 @@
-*{
-    font-size: 14px;
-}
-.info-section {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 250px 20px 150px;
-    line-height: 10px;
+.info-section{
+    flex-flow: column wrap;
 }
 
-.info-section h2 {
-    font-weight: bolder;
+.info-creator{
+    margin: 0vw 0vw -5vw -42vw;
+    align-items: center;
 }
 
-.info-section h3 {
-    line-height: 22px;
+.info-creator2{
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+    margin: 0vw -40vw 0vw 0vw;
+}
+
+.git-image{
+    width: 7vw;
+}
+
+.back-link h2{
+    color: rgba(8, 201, 8);
+    font-size: 0.8vw;
+}
+
+.gamehub-creators h2 {
+    color: rgba(8, 201, 8); 
 }

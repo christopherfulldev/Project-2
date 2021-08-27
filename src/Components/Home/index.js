@@ -14,7 +14,6 @@ const Home = (props) => {
             <h2 className="elegantext2">The greatest page for search your favorites game info!!!</h2>
             <FirstCarousel gameList={props} className="carouselcontainer"/>
             <Links/>
-            <Footer/>
          </div>
     )
 }
