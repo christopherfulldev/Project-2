@@ -26,3 +26,12 @@
 .gamehub-creators h2 {
     color: rgba(8, 201, 8); 
 }
+
+.link-style {
+    text-decoration: none;
+    color: white;
+}
+
+.img-logo{
+    width: 60px;
+}
