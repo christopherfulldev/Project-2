@@ -9,13 +9,32 @@ import FormControl from 'react-bootstrap/FormControl';
 import Button from 'react-bootstrap/Button';
 import { LinkContainer } from "react-router-bootstrap";
 import { NavItem } from "react-bootstrap";
+import {useState, useEffect} from "react";
+import GetOnApi from "../../Services/Getonapi";
+import { useHistory } from "react-router";
 
-const NavBar1 = () => {
+const NavBar1 = (props) => {
+  const [showButton, setShowButton] = useState(true)
+  const [inputContent, setInputContent] = useState("");
+   const history = useHistory();
+   const handleSubmit = async (event) => {
+   event.preventDefault();
+   history.push(`/game-list/description/${inputContent}`);
+  }
 
-  // const handleSubmit=(event)=>{
-  //   event.preventDefault();
-  //   getSearch()
-  // }
+  useEffect(() => {
+    console.log(history)
+    history.listen(() => {
+    const hiddeButton = history.location.pathname =="/" ? true : false;
+    setShowButton(hiddeButton);     
+    })
+  }, []);
+  
+  const handleChange = (event) => {
+    setInputContent(event.target.value);
+  }
+
+
   return(
     <>
         <Navbar bg= "light" expand= "lg" fill= "tabs">
@@ -38,22 +57,25 @@ const NavBar1 = () => {
             <NavItem>Parceiros</NavItem>
           </LinkContainer>  */}
           <LinkContainer to= "/game-list"> 
-            <NavItem> <Button variant="dark" 
-            size= "lg" 
-            className= "button-position">Let's Go!!!</Button>
+            <NavItem>
+            {showButton &&  <Button variant="dark" 
+              size= "lg" 
+              className= "button-position">Let's Go!!!
+              </Button> } 
             </NavItem>
           </LinkContainer>
             <NavDropdown title= "Link" id= "navbarScrollingDropdown">
             </NavDropdown>
           </Nav>
-          <Form className= "d-flex">
+          <Form className= "d-flex" onSubmit={handleSubmit}>
             <FormControl
               type= "search"
               placeholder= "Search"
               className= "mr-2"
               aria-label= "Search"
+              onChange= {handleChange}
             />
-            <Button variant= "outline-success">Search</Button>
+            <Button variant= "outline-success" type= "submit">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Navbar>

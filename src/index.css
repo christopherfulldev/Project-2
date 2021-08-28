@@ -1,7 +1,11 @@
+@import-normalize;
+
 .root{
   margin: 0vw;
   padding:0vw;
   font-family:"Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
 }
+
+
 
 

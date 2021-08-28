@@ -6,7 +6,7 @@ import PageTwo from './Components/Pagetwo/index';
 import PageTree from './Components/PageTree/index';
 import Footer from './Components/Footer/index';
 import React from 'react';
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 class App extends React.Component {
   constructor (props) {
@@ -29,12 +29,12 @@ class App extends React.Component {
       return(null)
     } else {
       return (
-      <div className="appstyles">
+      <div className= "appstyles">
       <NavBar1/>
       <Switch>
-        <Route exact path="/" render={(routeProps) =>  <Home {... routeProps} gameList= {this.state.gameList}/> } />
-        <Route exact path="/game-list" render={(routeProps) =>  <PageTwo {... routeProps} gameList= {this.state.gameList}/> } />
-        <Route exact path="/game-list/description" render={(routeProps) =>  <PageTree {... routeProps} gameList= {this.state.gameList}/> } />
+        <Route exact path= "/" render={(routeProps) =>  <Home {... routeProps} gameList= {this.state.gameList}/> } />
+        <Route exact path= "/game-list" render={(routeProps) =>  <PageTwo {... routeProps} gameList= {this.state.gameList}/> } />
+        <Route exact path= "/game-list/description/:search" component={ PageTree }/>
       </Switch>
       <Footer/>
       </div>

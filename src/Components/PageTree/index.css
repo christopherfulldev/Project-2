@@ -2,9 +2,17 @@
     background-color: black;
     font-size: 0.8vw;
     display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .card-style3 {
     width: 55vw;
     height: 40vw;
+    margin-bottom: 10vw;
+    align-items: center;
+}
+
+.micro-card{
+    display: inline-block;
 }

@@ -14,8 +14,8 @@ class GetOnApi {
     return this.api.get('/games?page_size=10')
   }
 
-  getSearch () {
-    return this.api.get('/search')
+  getSearch (search) {
+    return this.api.get(`/games?search=${search}$page_size=1`)
   }
 
   getSort (filter) {
