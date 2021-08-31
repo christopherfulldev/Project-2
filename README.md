@@ -20,10 +20,10 @@
 
 ## 📦 Development
 
-* REACT JS
+* REACT 
 * API INTEGRATION
-* BOOTSTRAP
-* CSS
+* Java Script
+* 
 
 ### 📌 To come
 
