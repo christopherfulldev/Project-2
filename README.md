@@ -7,7 +7,7 @@
 
 ### Introduction
 
-* Project module 2, Web Development course Ironhack wdpt may 2021.
+* Project module 2, Web Development course Ironhack "WDPT" MAY 2021.
     
 * It is a game search website, where you can find all information related to your favorite game, such as: release date, available plataforms, game dynamics and more ! It works with React Javascript technology and API integration.
 
