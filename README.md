@@ -23,7 +23,7 @@
 * REACT 
 * API INTEGRATION
 * Java Script
-* REACT Botstrap
+* REACT Bootstrap
 
 ### 📌 To come
 
